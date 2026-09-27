@@ -3,6 +3,7 @@ package controllers;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 public class LoginPageController {
@@ -11,14 +12,14 @@ public class LoginPageController {
     private Button btnLogin;
 
     @FXML
-    private TextField txtPassword;
+    private PasswordField txtPassword;
 
     @FXML
     private TextField txtUserName;
 
     @FXML
     void btnLoginOnAction(ActionEvent event) {
-        System.out.println("Login Successfull!!!!!");
+
     }
 
 }

@@ -19,7 +19,19 @@ public class LoginPageController {
 
     @FXML
     void btnLoginOnAction(ActionEvent event) {
+        String name = txtUserName.getText();
+        String password = txtPassword.getText();
+        boolean b = checkUserNameandPassword(name,password);
 
+        System.out.println(b);
     }
+
+    private boolean checkUserNameandPassword(String name, String password) {
+        if(name.equals("nimal") && password.equals("1234")){
+            return true;
+        }
+        return false;
+    }
+
 
 }
